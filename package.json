@@ -15,7 +15,7 @@
     },
     "scripts": {
         "build": "tsup",
-        "upload": "tsup && bun publish"
+        "upload": "bun run upload.ts"
     },
     "keywords": ["emoji", "unicode", "emote"],
     "author": "coreyrobinsondev",
