@@ -1,3 +1,2 @@
-export const test = () => {
-    console.log("Hello via Bun!");
-}
+export * from "./types.ts"
+export * from "./functions.ts"
