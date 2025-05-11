@@ -1,0 +1,19 @@
+name: Upload to NPM
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  run_command:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run your command
+        run: |
+          tsup
+          bun publish
