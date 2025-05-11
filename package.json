@@ -1,0 +1,22 @@
+{
+    "name": "@coreyrobinsondev/emoji",
+    "description": "Library of unicode emojis",
+    "version": "0.0.1",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "type": "module",
+    "devDependencies": {
+        "@types/bun": "latest",
+        "tsup": "^8.4.0"
+    },
+    "scripts": {
+        "build": "tsup"
+    },
+    "keywords": ["emoji", "unicode", "emote"],
+    "author": "coreyrobinsondev",
+    "license": "MIT",
+    "peerDependencies": {
+        "typescript": "^5"
+    }
+}
