@@ -1,19 +1,31 @@
 # emoji
 
-To install dependencies:
+Simple library of emojis
 
+## Installation
 ```bash
-bun install
+npm i @coreyrobinsondev/emoji
 ```
 
-To run:
+## Usage
+- Access to an object of all unicode emojis
+```typescript
+import { emojis } from "@coreyrobinsondev/emoji"
 
-```bash
-bun run index.ts
+emojis["grinning-face"].name        // "grinning face"
+emojis["grinning-face"].char        // "😀"
+emojis["grinning-face"].unicode     // ["1f600"]
+emojis["grinning-face"].emojiBlob   // ...Base64 encoded png of the emoji
+
 ```
 
-This project was created using `bun init` in bun v1.2.8. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+- Convert emoji names to their character counterpart 
+```typescript
+import { emojify } from "@coreyrobinsondev/emoji"
 
+ console.log(emojify("Hello! grinning-face")) // Hello! 😀
+ console.log(emojify("flamingoflag:-chad")) // 🦩🇹🇩
+```
 
 ## License
 [MIT License](./LICENSE)
