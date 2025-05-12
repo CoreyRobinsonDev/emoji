@@ -1,4 +1,5 @@
-import { emojis, type Emojis } from ".."
+import { type Emojis } from "./types"
+import { emojis } from ".."
 
 /** Replace valid emoji names with their character equivalent
  * @param input - string to be parsed
