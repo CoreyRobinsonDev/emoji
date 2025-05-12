@@ -1,5 +1,6 @@
 import { type Emojis } from "./types"
-import { emojis } from ".."
+import emojiJson from "./emoji.json" with {type: "json"}
+export const emojis: Emojis = emojiJson as Emojis
 
 /** Replace valid emoji names with their character equivalent
  * @param input - string to be parsed
